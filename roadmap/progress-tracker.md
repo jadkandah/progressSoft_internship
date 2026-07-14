@@ -26,18 +26,18 @@ Status: Done
 
 ### 02 - Text Preprocessing & Tokenization
 
-Status: Not Started
+Status: In Progress
 
 * [x] Create preprocessing and tokenization directory
-* [ ] Download and document the IMDB 50K Reviews dataset
-* [ ] Inspect dataset structure and labels
-* [ ] Implement a basic text preprocessing pipeline
-* [ ] Implement regex-based cleaning (punctuation, numbers, special characters, URLs, HTML, whitespace)
-* [ ] Add additional preprocessing features (e.g., stop-word removal, repeated whitespace removal)
-* [ ] Explain and implement stemming
-* [ ] Explain what tokenization is and why it is important
-* [ ] Explain word-level, character-level, and subword tokenization
-* [ ] Implement a basic tokenizer from scratch
+* [x] Download and document the IMDB 50K Reviews dataset
+* [x] Inspect dataset structure and labels
+* [x] Implement a basic text preprocessing pipeline
+* [x] Implement regex-based cleaning (punctuation, numbers, special characters, URLs, HTML, whitespace)
+* [x] Add additional preprocessing features (e.g., stop-word removal, repeated whitespace removal)
+* [x] Explain and implement stemming
+* [x] Explain what tokenization is and why it is important
+* [x] Explain word-level, character-level, and subword tokenization
+* [x] Implement a basic tokenizer from scratch
 * [ ] Compare the custom tokenizer with NLTK and spaCy
 * [ ] Explain BPE, WordPiece, and SentencePiece
 * [ ] Apply preprocessing and tokenization to the IMDB dataset
