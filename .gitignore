@@ -1,9 +1,84 @@
+# Python bytecode and caches
 __pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Virtual environments
 .venv/
 venv/
+env/
+ENV/
+venv.bak/
+env.bak/
+.python-version
+
+# Environment files
 .env
-.DS_Store
+.env.*
+!.env.example
+
+# Jupyter / notebooks
 .ipynb_checkpoints/
-*.pyc
+*.ipynb_checkpoints
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build / packaging
 build/
 dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+site/
+
+# Local logs and databases
+*.log
+*.sqlite3
+*.db
+
+# Model/data artifacts and downloads
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.parquet
+*.feather
+*.zip
+*.tar
+*.tar.gz
+*.gz
+*.xz
+*.bz2
+*.7z
+*.rar
+
+# Ignore downloaded datasets in data-like folders
+**/datasets/**
+**/dataset/**
+**/data/*.csv
+**/data/**/*.csv
+**/data/*.tsv
+**/data/**/*.tsv
+**/data/*.jsonl
+**/data/**/*.jsonl
+**/data/*.parquet
+**/data/**/*.parquet
+**/data/*.feather
+**/data/**/*.feather
+**/data/*.zip
+**/data/**/*.zip
+
+# Large local model files
+models/
+checkpoints/
+weights/

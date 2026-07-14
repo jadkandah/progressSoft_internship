@@ -26,7 +26,7 @@ Status: Done
 
 ### 02 - Text Preprocessing & Tokenization
 
-Status: In Progress
+Status: Done
 
 * [x] Create preprocessing and tokenization directory
 * [x] Download and document the IMDB 50K Reviews dataset
@@ -45,6 +45,49 @@ Status: In Progress
 * [ ] Organize the code into reusable modules
 * [ ] Complete README and observations
 
+### Started Assignemnt due to lack of time given for the material
+
+### Assignment Checklist
+
+Status: In Progress
+
+#### Project Setup
+* [x] Create the assignment project structure
+* [x] Configure a virtual environment and dependencies
+* [x] Download and inspect the Twitter Entity Sentiment Analysis dataset
+#### Data Pipeline
+* [x] Build the preprocessing pipeline
+* [x] Apply tokenization using a standard NLP library
+* [x] Implement TF-IDF vectorization
+* [x] Create reusable preprocessing and inference pipelines
+#### Model Development
+* [ ] Train a baseline Logistic Regression model
+* [ ] Train an SVM model
+* [ ] Compare both models
+* [ ] Perform hyperparameter tuning
+* [ ] Select the final model
+#### Model Evaluation
+* [ ] Evaluate using Accuracy, Precision, Recall, F1-score, and Confusion Matrix
+* [ ] Analyze model strengths and weaknesses
+* [ ] Test the model using custom sentiment examples
+#### Model Packaging
+* [ ] Save the trained model
+* [ ] Save the preprocessing and vectorization pipeline
+* [ ] Verify that the saved artifacts can be reloaded correctly
+#### REST API
+* [ ] Build an inference API using FastAPI
+* [ ] Validate API input and responses
+* [ ] Create a Python client for inference
+#### Performance Testing
+* [ ] Benchmark the API with concurrent requests
+* [ ] Measure total execution time
+* [ ] Calculate throughput
+* [ ] Plot latency vs concurrency
+* [ ] Plot throughput vs concurrency
+#### Documentation
+* [ ] Write a professional README
+* [ ] Write the final report
+* [ ] Organize the repository for GitHub
 
 
 ## Phase 2: Deep Learning
