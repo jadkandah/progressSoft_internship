@@ -1,0 +1,10 @@
+Metric,Logistic Regression,Linear SVM
+Accuracy,0.968,0.977
+Macro Precision,0.9694,0.9772
+Macro Recall,0.9658,0.9773
+Macro F1,0.9674,0.977
+Weighted F1,0.968,0.977
+Training Time (s),43.1,9.38
+Prediction Time (s),0.116,0.128
+Correct Predictions,968.0,977.0
+Incorrect Predictions,32.0,23.0

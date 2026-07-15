@@ -1,0 +1,5 @@
+model,accuracy,macro_f1,weighted_f1,training_or_search_time_seconds
+Tuned Linear SVM,0.98,0.9800076430409629,0.9799925214295389,198.17130853699928
+Baseline Linear SVM,0.977,0.977047,0.976995,9.383048
+Tuned Logistic Regression,0.975,0.9755676648140125,0.9750589821785213,272.95136903399543
+Baseline Logistic Regression,0.968,0.967366,0.967961,43.104806

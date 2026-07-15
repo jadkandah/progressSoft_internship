@@ -1,1 +1,5 @@
-# Dependencies will be added throughout the internship.
+pandas
+scikit-learn
+matplotlib
+nltk
+kagglehub
