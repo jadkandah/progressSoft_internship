@@ -26,7 +26,7 @@ Status: Done
 
 ### 02 - Text Preprocessing & Tokenization
 
-Status: Done
+Status: In Progress
 
 * [x] Create preprocessing and tokenization directory
 * [x] Download and document the IMDB 50K Reviews dataset
@@ -45,11 +45,10 @@ Status: Done
 * [ ] Organize the code into reusable modules
 * [ ] Complete README and observations
 
-### Started Assignemnt due to lack of time given for the material
 
 ### Assignment Checklist
 
-Status: In Progress
+Status: Paused
 
 #### Project Setup
 * [x] Create the assignment project structure
@@ -75,19 +74,12 @@ Status: In Progress
 * [x] Save the preprocessing and vectorization pipeline
 * [x] Verify that the saved artifacts can be reloaded correctly
 #### REST API
-* [ ] Build an inference API using FastAPI
-* [ ] Validate API input and responses
-* [ ] Create a Python client for inference
-#### Performance Testing
-* [ ] Benchmark the API with concurrent requests
-* [ ] Measure total execution time
-* [ ] Calculate throughput
-* [ ] Plot latency vs concurrency
-* [ ] Plot throughput vs concurrency
+* [x] Build an inference API using FastAPI
+* [x] Validate API input and responses
+* [x] Create a Python client for inference
 #### Documentation
-* [ ] Write a professional README
-* [ ] Write the final report
-* [ ] Organize the repository for GitHub
+* [x] Write a professional README
+* [x] Organize the repository for GitHub
 
 
 ## Phase 2: Deep Learning

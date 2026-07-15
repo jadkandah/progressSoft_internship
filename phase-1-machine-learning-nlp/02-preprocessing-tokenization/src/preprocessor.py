@@ -1,157 +1,91 @@
+"""TODO: Implement the IMDB text preprocessor.
+
+CHECKLIST
+---------
+[x] Convert text to lowercase.
+[x] Remove HTML tags using a regex.
+[x] Remove URLs using a regex.
+[x] Remove numbers using a regex.
+[x] Remove punctuation using a regex.
+[x] Remove special characters using a regex.
+[x] Convert newlines, tabs, and carriage returns to spaces.
+[x] Collapse repeated spaces.
+[x] Add stop-word removal.
+[x] Explain stemming and add optional stemming in the correct pipeline position.
+[x] Combine the operations in one configurable ``preprocess_text`` function.
+"""
+
+# TODO: Add imports only when you need them.
 import re
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 
-PORTER_STEMMER = PorterStemmer()
 
-def lowercase_text(text: str) -> str:
-    """Convert text to lowercase."""
-    if not isinstance(text, str):
-        raise TypeError("text must be a string")
+STOP_WORDS = set(stopwords.words("english"))
+Porter_Stemmer = PorterStemmer() 
 
+
+def lowercase_text(text: str):
+    """TODO: Validate and lowercase text."""
     return text.lower()
 
 
-def remove_html_tags(text: str) -> str:
-    """Remove HTML tags such as <br /> from text."""
-    if not isinstance(text, str):
-        raise TypeError("text must be a string")
-
-    return re.sub(r"<[^>]+>", " ", text)
+def remove_html_tags(text: str):
+    """TODO: Remove HTML tags with a regex."""
+    return re.sub(r'<.*?>', '', text) # the ? is put because if not it will remove <...> ... <...> so the stuff in between will be removed
 
 
-def remove_urls(text: str) -> str:
-    """Remove URLs that begin with http, https, or www."""
-    if not isinstance(text, str):
-        raise TypeError("text must be a string")
-
-    url_pattern = r"https?://\S+|www\.\S+"
-    return re.sub(url_pattern, " ", text)
+def remove_urls(text: str):
+    """TODO: Remove HTTP, HTTPS, and www URLs with a regex."""
+    return re.sub(r'https?://\S+|www\.\S+', '', text) # \S means any non whitespace character and + means one or more of the previous token
 
 
-def remove_numbers(text: str) -> str:
-    """Remove numeric digits from text."""
-    if not isinstance(text, str):
-        raise TypeError("text must be a string")
-
-    return re.sub(r"\d+", " ", text)
+def remove_numbers(text: str):
+    """TODO: Remove numbers with a regex."""
+    return re.sub(r'\d+', '', text)
 
 
-def remove_punctuation_and_special_characters(text: str) -> str:
-    """
-    Remove punctuation and special characters.
-
-    Keeps letters and whitespace only.
-    """
-    if not isinstance(text, str):
-        raise TypeError("text must be a string")
-
-    return re.sub(r"[^a-zA-Z\s]", " ", text)
+def remove_punctuation(text: str):
+    """TODO: Remove punctuation with a regex."""
+    return re.sub(r'[^\w\s]', '', text) # this removes any character that is not a word character or whitespace
 
 
-def normalize_whitespace(text: str) -> str:
-    """
-    Convert tabs, new lines, carriage returns, and repeated spaces
-    into a single space.
-    """
-    if not isinstance(text, str):
-        raise TypeError("text must be a string")
+def remove_special_characters(text: str):
+    """TODO: Remove unwanted special characters with a regex."""
+    return remove_punctuation(text) # since we already removes anything that is not a character or a space we can just call that function
 
-    return re.sub(r"\s+", " ", text).strip()
 
-def preprocess_text(text: str) -> str:
-    """
-    Apply the basic text preprocessing pipeline.
+def normalize_whitespace(text: str):
+    """TODO: Normalize all whitespace and remove repetitions."""
+    return re.sub(r'\s+', ' ', text).strip() 
 
-    Processing order:
-    1. Convert text to lowercase.
-    2. Remove HTML tags.
-    3. Remove URLs.
-    4. Remove numbers.
-    5. Remove punctuation and special characters.
-    6. Normalize whitespace.
-    """
-    if not isinstance(text, str):
-        raise TypeError("text must be a string")
 
-    text = lowercase_text(text)
-    text = remove_html_tags(text)
-    text = remove_urls(text)
-    text = remove_numbers(text)
-    text = remove_punctuation_and_special_characters(text)
-    text = normalize_whitespace(text)
-
-    return text
-
-NEGATION_WORDS = {"no", "not", "nor", "never"}
-
-ENGLISH_STOP_WORDS = set(stopwords.words("english")) - NEGATION_WORDS
-
-def remove_stop_words(
-    text: str,
-    stop_words: set[str] | None = None,
-) -> str:
-    """
-    Remove common English stop words while preserving negation words.
-
-    Parameters
-    ----------
-    text:
-        Input text that has already been cleaned.
-
-    stop_words:
-        Optional custom set of stop words. If not provided,
-        the default English NLTK stop-word set is used.
-
-    Returns
-    -------
-    str
-        Text without the selected stop words.
-    """
-    if not isinstance(text, str):
-        raise TypeError("text must be a string")
-
-    words_to_remove = (
-        ENGLISH_STOP_WORDS if stop_words is None else stop_words
-    )
-
+def remove_stop_words(text: str):
+    """TODO: Remove stop words while considering sentiment negations."""
     tokens = text.split()
+    filtered_tokens = [token for token in tokens if token.lower() not in STOP_WORDS]
+    return ' '.join(filtered_tokens)
+    
 
-    filtered_tokens = [
-        token
-        for token in tokens
-        if token not in words_to_remove
-    ]
+def stem_text(text: str):
+    """TODO: Apply a stemmer token by token."""
+    tokens = text.split()
+    stemmed_tokens = [Porter_Stemmer.stem(token) for token in tokens]
+    return ' '.join(stemmed_tokens)
+    
 
-    return " ".join(filtered_tokens)
 
 def preprocess_text(
     text: str,
     remove_stopwords: bool = False,
     apply_stemming: bool = False,
 ) -> str:
-    """
-    Apply the text preprocessing pipeline.
-
-    Parameters
-    ----------
-    text:
-        Input text.
-
-    remove_stopwords:
-        If True, remove common English stop words while preserving
-        negation words such as "not" and "never".
-    apply_stemming:
-        If True, apply stemming to the text.
-    """
-    if not isinstance(text, str):
-        raise TypeError("text must be a string")
-
+    """TODO: Apply preprocessing steps in a justified order."""
     text = lowercase_text(text)
     text = remove_html_tags(text)
     text = remove_urls(text)
     text = remove_numbers(text)
-    text = remove_punctuation_and_special_characters(text)
+    text = remove_special_characters(text)
     text = normalize_whitespace(text)
 
     if remove_stopwords:
@@ -161,37 +95,3 @@ def preprocess_text(
         text = stem_text(text)
 
     return text
-
-def stem_text(
-    text: str,
-    stemmer: PorterStemmer | None = None,
-) -> str:
-    """
-    Stem every token in a cleaned string.
-
-    Parameters
-    ----------
-    text:
-        Cleaned text containing whitespace-separated tokens.
-
-    stemmer:
-        Optional NLTK stemmer. The Porter stemmer is used by default.
-
-    Returns
-    -------
-    str
-        Text containing stemmed tokens.
-    """
-    if not isinstance(text, str):
-        raise TypeError("text must be a string")
-
-    selected_stemmer = PORTER_STEMMER if stemmer is None else stemmer
-
-    tokens = text.split()
-
-    stemmed_tokens = [
-        selected_stemmer.stem(token)
-        for token in tokens
-    ]
-
-    return " ".join(stemmed_tokens)

@@ -1,5 +1,30 @@
+# Data analysis and classical machine learning
+numpy
 pandas
 scikit-learn
 matplotlib
-nltk
+joblib
 kagglehub
+
+# NLP
+nltk
+spacy
+transformers
+sentencepiece
+
+# API and inference client
+fastapi
+uvicorn[standard]
+pydantic
+requests
+
+# Deep learning
+torch
+tensorflow
+
+# Model export and optimized inference
+onnx
+onnxruntime
+
+# Search and retrieval
+elasticsearch
