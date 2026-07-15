@@ -1,7 +1,8 @@
 from pathlib import Path
+
 import joblib
 from fastapi import FastAPI
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -16,20 +17,17 @@ app = FastAPI(
 
 
 class PredictionRequest(BaseModel):
-    text: str
+    text: str = Field(min_length=1)
 
 
 @app.get("/")
 def root():
-    return {
-        "message": "Twitter Sentiment API is running"
-    }
+    return {"message": "Twitter Sentiment API is running"}
 
 
 @app.post("/predict")
 def predict(request: PredictionRequest):
     prediction = model.predict([request.text])[0]
-
     return {
         "text": request.text,
         "predicted_sentiment": str(prediction),

@@ -1,8 +1,9 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
-from src.preprocessing import tokenize_text, normalize_text
+
+from src.preprocessing import normalize_text, tokenize_text
+
 
 def build_tfidf_vectorizer():
-    
     return TfidfVectorizer(
         preprocessor=normalize_text,
         tokenizer=tokenize_text,

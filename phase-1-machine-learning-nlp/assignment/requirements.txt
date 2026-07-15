@@ -2,7 +2,6 @@ pandas
 scikit-learn
 matplotlib
 nltk
-kagglehub
 joblib
 fastapi
 uvicorn[standard]
