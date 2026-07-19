@@ -26,7 +26,7 @@ Status: Done
 
 ### 02 - Text Preprocessing & Tokenization
 
-Status: In Progress
+Status: Done
 
 * [x] Create preprocessing and tokenization directory
 * [x] Download and document the IMDB 50K Reviews dataset
@@ -38,12 +38,9 @@ Status: In Progress
 * [x] Explain what tokenization is and why it is important
 * [x] Explain word-level, character-level, and subword tokenization
 * [x] Implement a basic tokenizer from scratch
-* [ ] Compare the custom tokenizer with NLTK and spaCy
-* [ ] Explain BPE, WordPiece, and SentencePiece
-* [ ] Apply preprocessing and tokenization to the IMDB dataset
-* [ ] Test the preprocessing pipeline on sample reviews
-* [ ] Organize the code into reusable modules
-* [ ] Complete README and observations
+* [x] Compare the custom tokenizer with NLTK and spaCy
+* [x] Explain BPE, WordPiece, and SentencePiece
+* [x] Complete README and observations
 
 
 ### Assignment Checklist

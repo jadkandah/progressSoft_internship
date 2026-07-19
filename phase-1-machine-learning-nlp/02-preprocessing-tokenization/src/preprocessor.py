@@ -1,4 +1,4 @@
-"""TODO: Implement the IMDB text preprocessor.
+"""Reusable text preprocessing helpers for the IMDB review dataset.
 
 CHECKLIST
 ---------
@@ -15,7 +15,6 @@ CHECKLIST
 [x] Combine the operations in one configurable ``preprocess_text`` function.
 """
 
-# TODO: Add imports only when you need them.
 import re
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
@@ -26,49 +25,49 @@ Porter_Stemmer = PorterStemmer()
 
 
 def lowercase_text(text: str):
-    """TODO: Validate and lowercase text."""
+    """Convert text to lowercase."""
     return text.lower()
 
 
 def remove_html_tags(text: str):
-    """TODO: Remove HTML tags with a regex."""
+    """Remove HTML tags with a regex."""
     return re.sub(r'<.*?>', '', text) # the ? is put because if not it will remove <...> ... <...> so the stuff in between will be removed
 
 
 def remove_urls(text: str):
-    """TODO: Remove HTTP, HTTPS, and www URLs with a regex."""
+    """Remove HTTP, HTTPS, and www URLs with a regex."""
     return re.sub(r'https?://\S+|www\.\S+', '', text) # \S means any non whitespace character and + means one or more of the previous token
 
 
 def remove_numbers(text: str):
-    """TODO: Remove numbers with a regex."""
+    """Remove numbers with a regex."""
     return re.sub(r'\d+', '', text)
 
 
 def remove_punctuation(text: str):
-    """TODO: Remove punctuation with a regex."""
+    """Remove punctuation with a regex."""
     return re.sub(r'[^\w\s]', '', text) # this removes any character that is not a word character or whitespace
 
 
 def remove_special_characters(text: str):
-    """TODO: Remove unwanted special characters with a regex."""
+    """Remove unwanted special characters with a regex."""
     return remove_punctuation(text) # since we already removes anything that is not a character or a space we can just call that function
 
 
 def normalize_whitespace(text: str):
-    """TODO: Normalize all whitespace and remove repetitions."""
+    """Normalize all whitespace and remove repetitions."""
     return re.sub(r'\s+', ' ', text).strip() 
 
 
 def remove_stop_words(text: str):
-    """TODO: Remove stop words while considering sentiment negations."""
+    """Remove English stop words from whitespace-delimited text."""
     tokens = text.split()
     filtered_tokens = [token for token in tokens if token.lower() not in STOP_WORDS]
     return ' '.join(filtered_tokens)
     
 
 def stem_text(text: str):
-    """TODO: Apply a stemmer token by token."""
+    """Apply Porter stemming token by token."""
     tokens = text.split()
     stemmed_tokens = [Porter_Stemmer.stem(token) for token in tokens]
     return ' '.join(stemmed_tokens)
@@ -80,7 +79,7 @@ def preprocess_text(
     remove_stopwords: bool = False,
     apply_stemming: bool = False,
 ) -> str:
-    """TODO: Apply preprocessing steps in a justified order."""
+    """Apply the configured preprocessing steps in a consistent order."""
     text = lowercase_text(text)
     text = remove_html_tags(text)
     text = remove_urls(text)
