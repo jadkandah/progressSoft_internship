@@ -43,40 +43,7 @@ Status: Done
 * [x] Complete README and observations
 
 
-### Assignment Checklist
 
-Status: Paused
-
-#### Project Setup
-* [x] Create the assignment project structure
-* [x] Configure a virtual environment and dependencies
-* [x] Download and inspect the Twitter Entity Sentiment Analysis dataset
-#### Data Pipeline
-* [x] Build the preprocessing pipeline
-* [x] Apply tokenization using a standard NLP library
-* [x] Implement TF-IDF vectorization
-* [x] Create reusable preprocessing and inference pipelines
-#### Model Development
-* [x] Train a baseline Logistic Regression model
-* [x] Train an SVM model
-* [x] Compare both models
-* [x] Perform hyperparameter tuning
-* [x] Select the final model
-#### Model Evaluation
-* [x] Evaluate using Accuracy, Precision, Recall, F1-score, and Confusion Matrix
-* [x] Analyze model strengths and weaknesses
-* [x] Test the model using custom sentiment examples
-#### Model Packaging
-* [x] Save the trained model
-* [x] Save the preprocessing and vectorization pipeline
-* [x] Verify that the saved artifacts can be reloaded correctly
-#### REST API
-* [x] Build an inference API using FastAPI
-* [x] Validate API input and responses
-* [x] Create a Python client for inference
-#### Documentation
-* [x] Write a professional README
-* [x] Organize the repository for GitHub
 
 
 ## Phase 2: Deep Learning
