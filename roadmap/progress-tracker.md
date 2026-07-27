@@ -42,7 +42,57 @@ Status: Done
 * [x] Explain BPE, WordPiece, and SentencePiece
 * [x] Complete README and observations
 
+### 03 - Text Statistics
 
+Status: In Progress
+
+* [x] Create a notebook-first text-statistics skeleton
+* [x] Load and prepare the IMDB review corpus
+* [x] Calculate total words, unique words, and the top 10 words
+* [x] Implement contiguous N-grams for any positive N
+* [x] Find the top 10 N-grams for N = 2, 3, and 4
+* [x] Calculate Type-Token Ratio
+* [x] Calculate hapax-legomena and dis-legomena proportions
+* [ ] Calculate mean, median, and variance of review lengths
+* [ ] Calculate Shannon entropy for the word distribution
+* [ ] Add sanity checks and clearly labelled results
+* [ ] Complete the final interpretation and README observations
+
+
+### Assignment Checklist
+
+Status: Paused
+
+#### Project Setup
+* [x] Create the assignment project structure
+* [x] Configure a virtual environment and dependencies
+* [x] Download and inspect the Twitter Entity Sentiment Analysis dataset
+#### Data Pipeline
+* [x] Build the preprocessing pipeline
+* [x] Apply tokenization using a standard NLP library
+* [x] Implement TF-IDF vectorization
+* [x] Create reusable preprocessing and inference pipelines
+#### Model Development
+* [x] Train a baseline Logistic Regression model
+* [x] Train an SVM model
+* [x] Compare both models
+* [x] Perform hyperparameter tuning
+* [x] Select the final model
+#### Model Evaluation
+* [x] Evaluate using Accuracy, Precision, Recall, F1-score, and Confusion Matrix
+* [x] Analyze model strengths and weaknesses
+* [x] Test the model using custom sentiment examples
+#### Model Packaging
+* [x] Save the trained model
+* [x] Save the preprocessing and vectorization pipeline
+* [x] Verify that the saved artifacts can be reloaded correctly
+#### REST API
+* [x] Build an inference API using FastAPI
+* [x] Validate API input and responses
+* [x] Create a Python client for inference
+#### Documentation
+* [x] Write a professional README
+* [x] Organize the repository for GitHub
 
 
 

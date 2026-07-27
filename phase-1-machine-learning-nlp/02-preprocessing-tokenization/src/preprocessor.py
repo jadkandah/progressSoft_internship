@@ -31,7 +31,7 @@ def lowercase_text(text: str):
 
 def remove_html_tags(text: str):
     """Remove HTML tags with a regex."""
-    return re.sub(r'<.*?>', '', text) # the ? is put because if not it will remove <...> ... <...> so the stuff in between will be removed
+    return re.sub(r'<.*?>', '', text) # the ? is put because ifit weren't there it will remove <...> ... <...> so the stuff in between will be removed
 
 
 def remove_urls(text: str):
@@ -70,7 +70,7 @@ def stem_text(text: str):
     """Apply Porter stemming token by token."""
     tokens = text.split()
     stemmed_tokens = [Porter_Stemmer.stem(token) for token in tokens]
-    return ' '.join(stemmed_tokens)
+    return ' '.join(stemmed_tokens) # In order to be happy you need to know the real meaning of happiness
     
 
 
