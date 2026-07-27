@@ -47,12 +47,12 @@ Status: Done
 Status: In Progress
 
 * [x] Create a notebook-first text-statistics skeleton
-* [x] Load and prepare the IMDB review corpus
-* [x] Calculate total words, unique words, and the top 10 words
-* [x] Implement contiguous N-grams for any positive N
-* [x] Find the top 10 N-grams for N = 2, 3, and 4
-* [x] Calculate Type-Token Ratio
-* [x] Calculate hapax-legomena and dis-legomena proportions
+* [ ] Load and prepare the IMDB review corpus
+* [ ] Calculate total words, unique words, and the top 10 words
+* [ ] Implement contiguous N-grams for any positive N
+* [ ] Find the top 10 N-grams for N = 2, 3, and 4
+* [ ] Calculate Type-Token Ratio
+* [ ] Calculate hapax-legomena and dis-legomena proportions
 * [ ] Calculate mean, median, and variance of review lengths
 * [ ] Calculate Shannon entropy for the word distribution
 * [ ] Add sanity checks and clearly labelled results
@@ -64,35 +64,35 @@ Status: In Progress
 Status: Paused
 
 #### Project Setup
-* [x] Create the assignment project structure
-* [x] Configure a virtual environment and dependencies
-* [x] Download and inspect the Twitter Entity Sentiment Analysis dataset
+* [ ] Create the assignment project structure
+* [ ] Configure a virtual environment and dependencies
+* [ ] Download and inspect the Twitter Entity Sentiment Analysis dataset
 #### Data Pipeline
-* [x] Build the preprocessing pipeline
-* [x] Apply tokenization using a standard NLP library
-* [x] Implement TF-IDF vectorization
-* [x] Create reusable preprocessing and inference pipelines
+* [ ] Build the preprocessing pipeline
+* [ ] Apply tokenization using a standard NLP library
+* [ ] Implement TF-IDF vectorization
+* [ ] Create reusable preprocessing and inference pipelines
 #### Model Development
-* [x] Train a baseline Logistic Regression model
-* [x] Train an SVM model
-* [x] Compare both models
-* [x] Perform hyperparameter tuning
-* [x] Select the final model
+* [ ] Train a baseline Logistic Regression model
+* [ ] Train an SVM model
+* [ ] Compare both models
+* [ ] Perform hyperparameter tuning
+* [ ] Select the final model
 #### Model Evaluation
-* [x] Evaluate using Accuracy, Precision, Recall, F1-score, and Confusion Matrix
-* [x] Analyze model strengths and weaknesses
-* [x] Test the model using custom sentiment examples
+* [ ] Evaluate using Accuracy, Precision, Recall, F1-score, and Confusion Matrix
+* [ ] Analyze model strengths and weaknesses
+* [ ] Test the model using custom sentiment examples
 #### Model Packaging
-* [x] Save the trained model
-* [x] Save the preprocessing and vectorization pipeline
-* [x] Verify that the saved artifacts can be reloaded correctly
+* [ ] Save the trained model
+* [ ] Save the preprocessing and vectorization pipeline
+* [ ] Verify that the saved artifacts can be reloaded correctly
 #### REST API
-* [x] Build an inference API using FastAPI
-* [x] Validate API input and responses
-* [x] Create a Python client for inference
+* [ ] Build an inference API using FastAPI
+* [ ] Validate API input and responses
+* [ ] Create a Python client for inference
 #### Documentation
-* [x] Write a professional README
-* [x] Organize the repository for GitHub
+* [ ] Write a professional README
+* [ ] Organize the repository for GitHub
 
 
 
