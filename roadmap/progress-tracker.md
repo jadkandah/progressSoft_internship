@@ -58,6 +58,17 @@ Status: In Progress
 * [ ] Add sanity checks and clearly labelled results
 * [ ] Complete the final interpretation and README observations
 
+### 04 - Search and Information Retrieval
+
+Status: In Progress
+
+* [x] Create a notebook-first search skeleton
+* [x] Explain what indexing is and how documents get indexed
+* [x] Explain TF-IDF, implement it, and compute it for each word in one IMDB review
+* [ ] Explain how ranking works given any user query
+* [ ] Explain how most search engines work
+* [x] Use Elasticsearch to index documents and perform a query in Python
+
 
 ### Assignment Checklist
 
