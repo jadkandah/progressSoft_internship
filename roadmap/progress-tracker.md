@@ -69,6 +69,19 @@ Status: In Progress
 * [ ] Explain how most search engines work
 * [x] Use Elasticsearch to index documents and perform a query in Python
 
+### 11 - Support Vector Machines
+
+Status: Done
+
+* [x] Explain how SVM works and how it differs from Logistic Regression
+* [x] Reuse the IMDB preprocessing, tokenization, and TF-IDF pipeline
+* [x] Apply a very-large-C linear SVM as a hard-margin approximation
+* [x] Report hard-margin classification metrics and margin violations
+* [x] Use a train/validation/test split for soft-margin tuning
+* [x] Tune C using validation F1
+* [x] Evaluate the selected soft-margin model on the held-out test set
+* [x] Compare hard-margin and soft-margin results
+
 
 ### Assignment Checklist
 
