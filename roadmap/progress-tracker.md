@@ -82,6 +82,20 @@ Status: Done
 * [x] Evaluate the selected soft-margin model on the held-out test set
 * [x] Compare hard-margin and soft-margin results
 
+### 12 - FastAPI Serving and Concurrency Experiments
+
+Status: Done
+
+* [x] Refit and package the tuned IMDB sentiment pipeline
+* [x] Reuse the existing preprocessing, tokenization, and TF-IDF code
+* [x] Build health and prediction endpoints with FastAPI
+* [x] Validate input, health responses, and sentiment predictions
+* [x] Create a separate Python inference client
+* [x] Send 1,000 requests at each parallelism level from 5 through 100
+* [x] Record completion time, throughput, mean latency, and p95 latency
+* [x] Plot completion time and throughput against parallel requests
+* [x] Identify and explain the maximum-throughput setting
+
 
 ### Assignment Checklist
 

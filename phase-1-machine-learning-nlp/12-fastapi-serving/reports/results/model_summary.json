@@ -1,0 +1,12 @@
+{
+  "random_seed": 42,
+  "development_reviews": 39665,
+  "test_reviews": 9917,
+  "vocabulary_size": 30000,
+  "selected_C": 1.0,
+  "training_seconds": 26.6295,
+  "test_accuracy": 0.894525,
+  "test_precision": 0.888823,
+  "test_recall": 0.902753,
+  "test_f1": 0.895734
+}
