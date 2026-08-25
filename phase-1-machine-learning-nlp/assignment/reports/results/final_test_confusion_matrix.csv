@@ -1,0 +1,5 @@
+,predicted_Irrelevant,predicted_Negative,predicted_Neutral,predicted_Positive
+actual_Irrelevant,74,42,17,39
+actual_Negative,17,188,28,32
+actual_Neutral,34,59,147,45
+actual_Positive,24,29,33,190

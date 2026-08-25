@@ -1,7 +1,7 @@
 from pathlib import Path
 
 import joblib
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
 
@@ -27,6 +27,9 @@ def root():
 
 @app.post("/predict")
 def predict(request: PredictionRequest):
+    if not request.text.strip():
+        raise HTTPException(status_code=422, detail="Text must not be blank")
+
     prediction = model.predict([request.text])[0]
     return {
         "text": request.text,

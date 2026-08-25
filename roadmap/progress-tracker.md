@@ -99,38 +99,39 @@ Status: Done
 
 ### Assignment Checklist
 
-Status: Paused
+Status: Done
 
 #### Project Setup
-* [ ] Create the assignment project structure
-* [ ] Configure a virtual environment and dependencies
-* [ ] Download and inspect the Twitter Entity Sentiment Analysis dataset
+* [x] Create the assignment project structure
+* [x] Configure a virtual environment and dependencies
+* [x] Download and inspect the Twitter Entity Sentiment Analysis dataset
 #### Data Pipeline
-* [ ] Build the preprocessing pipeline
-* [ ] Apply tokenization using a standard NLP library
-* [ ] Implement TF-IDF vectorization
-* [ ] Create reusable preprocessing and inference pipelines
+* [x] Build the preprocessing pipeline
+* [x] Apply tokenization using a standard NLP library
+* [x] Implement TF-IDF vectorization
+* [x] Create reusable preprocessing and inference pipelines
+* [x] Create reproducible group-disjoint train, validation, and test splits
 #### Model Development
-* [ ] Train a baseline Logistic Regression model
-* [ ] Train an SVM model
-* [ ] Compare both models
-* [ ] Perform hyperparameter tuning
-* [ ] Select the final model
+* [x] Train a baseline Logistic Regression model
+* [x] Train an SVM model
+* [x] Compare both models
+* [x] Perform hyperparameter tuning
+* [x] Select the final model
 #### Model Evaluation
-* [ ] Evaluate using Accuracy, Precision, Recall, F1-score, and Confusion Matrix
-* [ ] Analyze model strengths and weaknesses
-* [ ] Test the model using custom sentiment examples
+* [x] Evaluate using Accuracy, Precision, Recall, F1-score, and Confusion Matrix
+* [x] Analyze model strengths and weaknesses
+* [x] Test the model using custom sentiment examples
 #### Model Packaging
-* [ ] Save the trained model
-* [ ] Save the preprocessing and vectorization pipeline
-* [ ] Verify that the saved artifacts can be reloaded correctly
+* [x] Save the trained model
+* [x] Save the preprocessing and vectorization pipeline
+* [x] Verify that the saved artifacts can be reloaded correctly
 #### REST API
-* [ ] Build an inference API using FastAPI
-* [ ] Validate API input and responses
-* [ ] Create a Python client for inference
+* [x] Build an inference API using FastAPI
+* [x] Validate API input and responses
+* [x] Create a Python client for inference
 #### Documentation
-* [ ] Write a professional README
-* [ ] Organize the repository for GitHub
+* [x] Write a professional README
+* [x] Organize the repository for GitHub
 
 
 

@@ -1,0 +1,2 @@
+model,test_rows,accuracy,macro_precision,macro_recall,macro_f1,weighted_f1
+Tuned Logistic Regression,998,0.6002004008016032,0.5905219074671362,0.5859654477973364,0.5838476765401105,0.5959033815716616
