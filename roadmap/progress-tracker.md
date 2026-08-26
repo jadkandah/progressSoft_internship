@@ -137,4 +137,18 @@ Status: Done
 
 ## Phase 2: Deep Learning
 
+### 01 - Deep Learning Frameworks Primer
+
+Status: Done
+
+* [x] Explain computation graphs and data dependencies
+* [x] Explain backpropagation and reverse-mode automatic differentiation
+* [x] Describe the responsibilities of a deep learning framework
+* [x] Create TensorFlow and PyTorch tensors from lists of floats
+* [x] Compare four mathematical tensor operations
+* [x] Implement gradient descent without numerical libraries
+* [x] Optimize the same scalar function with TensorFlow and PyTorch
+* [x] Verify convergence against the analytical minimum
+* [x] Detect accelerator availability and document the device choice
+
 ## Phase 3: AI Agents
