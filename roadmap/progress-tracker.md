@@ -151,4 +151,20 @@ Status: Done
 * [x] Verify convergence against the analytical minimum
 * [x] Detect accelerator availability and document the device choice
 
+### 02 - Multilayer Perceptrons
+
+Status: Done
+
+* [x] Reuse the IMDB preprocessing, tokenization, and TF-IDF pipeline
+* [x] Deduplicate model-visible reviews before a reproducible stratified train/validation/test split
+* [x] Learn the TF-IDF vocabulary and IDF from training only, then L2-normalize every split
+* [x] Explain why normalization must suit the activation function
+* [x] L2-normalize sparse inputs and batch-normalize hidden ReLU inputs
+* [x] Explain why initialization must suit the activation function
+* [x] Apply Kaiming initialization to ReLU layers and Xavier initialization to the output
+* [x] Train a sparse-input MLP in PyTorch
+* [x] Report held-out accuracy, precision, recall, F1, ROC AUC, and a confusion matrix
+* [x] Record learning curves and honest overfitting observations
+* [x] Detect accelerator availability and document the device choice
+
 ## Phase 3: AI Agents
