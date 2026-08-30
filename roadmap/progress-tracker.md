@@ -167,4 +167,21 @@ Status: Done
 * [x] Record learning curves and honest overfitting observations
 * [x] Detect accelerator availability and document the device choice
 
+### 03 - Convolutional Neural Networks
+
+Status: Done
+
+* [x] Explain convolution, kernel size, stride, padding, and pooling
+* [x] Explain receptive fields and calculate the assigned network's field
+* [x] Compare 1D and 2D convolutional networks
+* [x] Explain dilated convolution
+* [x] Reuse the IMDB preprocessing and tokenization pipeline
+* [x] Deduplicate model-visible reviews before a reproducible stratified split
+* [x] Learn a sequence vocabulary from training data only
+* [x] Pad and truncate token sequences with reported coverage diagnostics
+* [x] Implement and train a 1D CNN in PyTorch
+* [x] Report held-out accuracy, precision, recall, F1, ROC AUC, and a confusion matrix
+* [x] Record learning curves and honest generalization observations
+* [x] Detect accelerator availability and document the device choice
+
 ## Phase 3: AI Agents
