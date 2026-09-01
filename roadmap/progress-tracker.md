@@ -184,4 +184,21 @@ Status: Done
 * [x] Record learning curves and honest generalization observations
 * [x] Detect accelerator availability and document the device choice
 
+### 04 - Autoencoders
+
+Status: Done
+
+* [x] Explain autoencoders and bottleneck representations
+* [x] Reuse the IMDB preprocessing and tokenization pipeline
+* [x] Deduplicate model-visible reviews before a reproducible stratified split
+* [x] Learn word and context vocabularies from training data only
+* [x] Build normalized PPMI word-context profiles without validation or test leakage
+* [x] Train a PyTorch autoencoder to reconstruct word profiles
+* [x] Extract word embeddings from the bottleneck
+* [x] Mean-pool word embeddings into review features
+* [x] Train a Logistic Regression sentiment classifier
+* [x] Report held-out accuracy, precision, recall, F1, ROC AUC, and a confusion matrix
+* [x] Record reconstruction curves, vocabulary coverage, and honest limitations
+* [x] Detect accelerator availability and document the device choice
+
 ## Phase 3: AI Agents

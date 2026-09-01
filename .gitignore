@@ -51,6 +51,9 @@ site/
 *.npz
 *.h5
 *.hdf5
+*.pt
+*.pth
+*.ckpt
 *.parquet
 *.feather
 *.zip
