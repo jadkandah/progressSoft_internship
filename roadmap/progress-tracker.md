@@ -201,4 +201,20 @@ Status: Done
 * [x] Record reconstruction curves, vocabulary coverage, and honest limitations
 * [x] Detect accelerator availability and document the device choice
 
+### 05 - Numerical Stability and Neural-Network Regularization
+
+Status: Done
+
+* [x] Explain vanishing and exploding gradients and their numerical consequences
+* [x] List the main techniques for avoiding unstable gradients
+* [x] List the main neural-network regularization techniques
+* [x] Reuse the original IMDB preprocessing, tokenization, TF-IDF, split, and MLP widths
+* [x] Keep activation-aware initialization, input normalization, and batch normalization
+* [x] Use a numerically stable fused binary-classification loss
+* [x] Add dropout, decoupled weight decay, and gradient clipping
+* [x] Verify finite losses and gradients and record gradient norms
+* [x] Compare the fixed final epoch with the original MLP on the held-out test set
+* [x] Report suitable classification metrics and honest generalization observations
+* [x] Detect accelerator availability and document the device choice
+
 ## Phase 3: AI Agents
