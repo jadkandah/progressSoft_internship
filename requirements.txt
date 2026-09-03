@@ -21,6 +21,7 @@ requests
 # Deep learning
 torch
 tensorflow
+optuna
 
 # Model export and optimized inference
 onnx

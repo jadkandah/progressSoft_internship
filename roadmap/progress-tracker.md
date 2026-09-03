@@ -217,4 +217,19 @@ Status: Done
 * [x] Report suitable classification metrics and honest generalization observations
 * [x] Detect accelerator availability and document the device choice
 
+### 06 - Hyperparameter Tuning and Model Selection
+
+Status: Done
+
+* [x] Reuse the regularized IMDB MLP, leak-free split, and TF-IDF representation
+* [x] Train for 100 epochs and retain the lowest-validation-loss checkpoint
+* [x] Compare the selected checkpoint with the overfit final epoch
+* [x] Implement a learning-rate grid without a tuning library
+* [x] Select the best checkpoint within every manual-search candidate
+* [x] Tune the same hyperparameter with seeded Optuna trials
+* [x] Keep the test set outside all checkpoint and hyperparameter decisions
+* [x] Evaluate the validation-selected candidates on the held-out test set
+* [x] Report suitable classification metrics and honest model-selection observations
+* [x] Detect accelerator availability and document the device choice
+
 ## Phase 3: AI Agents
