@@ -232,4 +232,22 @@ Status: Done
 * [x] Report suitable classification metrics and honest model-selection observations
 * [x] Detect accelerator availability and document the device choice
 
+### 07 - Recurrent Neural Networks, LSTMs, and GRUs
+
+Status: Done
+
+* [x] Explain recurrent units and hidden state
+* [x] Identify the types of ordered data processed by RNNs
+* [x] Explain why vanilla RNNs struggle with long dependencies
+* [x] Explain LSTM and GRU gates and their advantages
+* [x] Reuse the IMDB preprocessing and tokenization pipeline
+* [x] Deduplicate model-visible reviews before a reproducible stratified split
+* [x] Learn a sequence vocabulary from training data only
+* [x] Pad and truncate token sequences with coverage diagnostics
+* [x] Implement and train a PyTorch LSTM classifier
+* [x] Retain the lowest-validation-loss checkpoint before test evaluation
+* [x] Report held-out accuracy, precision, recall, F1, ROC AUC, and a confusion matrix
+* [x] Record learning curves, gradient clipping, timing, and honest limitations
+* [x] Detect accelerator availability and document the device choice
+
 ## Phase 3: AI Agents
