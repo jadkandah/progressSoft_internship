@@ -250,4 +250,21 @@ Status: Done
 * [x] Record learning curves, gradient clipping, timing, and honest limitations
 * [x] Detect accelerator availability and document the device choice
 
+### 08 - Other Layers, Activation Functions, Loss Functions, and Optimizers
+
+Status: Done
+
+* [x] Reuse the leak-free IMDB split and training-only TF-IDF representation
+* [x] Keep the MLP architecture, hidden normalization, training budget, and validation rule controlled
+* [x] Compare LeakyReLU, PReLU, SELU, GELU, Softplus, and Swish
+* [x] Match hidden-layer initialization to each activation family
+* [x] Select the activation using validation loss
+* [x] Compare SGD, momentum, Nesterov momentum, Adam, RMSProp, and AMSGrad
+* [x] Use fixed, declared optimizer learning rates and equal training budgets
+* [x] Retain the lowest-validation-loss checkpoint within every run
+* [x] Explain the stable binary loss and the roles of the surrounding layers
+* [x] Evaluate only the final validation-selected checkpoint on the held-out test set
+* [x] Report held-out accuracy, precision, recall, F1, ROC AUC, and a confusion matrix
+* [x] Record timing, gradient checks, limitations, and the accelerator decision
+
 ## Phase 3: AI Agents
