@@ -267,4 +267,23 @@ Status: Done
 * [x] Report held-out accuracy, precision, recall, F1, ROC AUC, and a confusion matrix
 * [x] Record timing, gradient checks, limitations, and the accelerator decision
 
+### 09 - Brief Introduction to Transformer Networks
+
+Status: Done
+
+* [x] Explain trainable token embeddings and padding behavior
+* [x] Reuse the IMDB preprocessing and tokenization pipeline
+* [x] Deduplicate model-visible reviews before a reproducible stratified split
+* [x] Learn the sequence vocabulary from training data only
+* [x] Train and evaluate an embedding-plus-LSTM classifier
+* [x] Implement multi-head scaled dot-product self-attention
+* [x] Prepend a dedicated CLASS token to attention inputs
+* [x] Mask padding and verify normalized attention probabilities
+* [x] Classify from the final contextualized CLASS representation
+* [x] Train attention models without and with learned positional embeddings
+* [x] Keep the attention comparison controlled except for learned positions
+* [x] Retain the lowest-validation-loss checkpoint for every model
+* [x] Report held-out accuracy, precision, recall, F1, ROC AUC, and confusion matrices
+* [x] Record timing, gradient checks, limitations, and the accelerator decision
+
 ## Phase 3: AI Agents
