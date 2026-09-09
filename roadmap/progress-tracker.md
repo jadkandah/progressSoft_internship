@@ -286,4 +286,24 @@ Status: Done
 * [x] Report held-out accuracy, precision, recall, F1, ROC AUC, and confusion matrices
 * [x] Record timing, gradient checks, limitations, and the accelerator decision
 
+### 10 - Pre-trained Models, Transfer Learning, and Fine-Tuning
+
+Status: Done
+
+* [x] Distinguish pretraining, transfer learning, and fine-tuning
+* [x] Explain sequence-to-sequence, causal language modeling, masked language modeling, and span corruption
+* [x] Identify the objectives used for original BERT pretraining
+* [x] Reuse the IMDB preprocessing pipeline and BERT WordPiece tokenization
+* [x] Deduplicate model-visible reviews before a reproducible stratified split
+* [x] Train a randomly initialized BERT Tiny sentiment classifier
+* [x] Partially fine-tune pretrained BERT Tiny on the compatible IMDB task
+* [x] Freeze embeddings and update the final two Transformer layers plus the classifier
+* [x] Retain the lowest-validation-loss checkpoint for each neural model
+* [x] Extract mean-pooled embeddings from a frozen pretrained BERT encoder
+* [x] Serialize and reload the embedding splits from an ignored pickle file
+* [x] Select a linear SVM regularization value using validation data only
+* [x] Evaluate all final models once on the held-out test set
+* [x] Report accuracy, precision, recall, F1, ROC AUC, and confusion matrices
+* [x] Record timing, truncation, limitations, and the accelerator decision
+
 ## Phase 3: AI Agents
