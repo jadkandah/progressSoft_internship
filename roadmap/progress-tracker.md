@@ -306,4 +306,23 @@ Status: Done
 * [x] Report accuracy, precision, recall, F1, ROC AUC, and confusion matrices
 * [x] Record timing, truncation, limitations, and the accelerator decision
 
+### 11 - Zero-Shot, One-Shot, and Few-Shot Learning
+
+Status: Done
+
+* [x] Explain zero-shot, one-shot, and few-shot learning
+* [x] Interpret each shot as one labeled example per sentiment class
+* [x] Reload and validate the serialized BERT Tiny embedding splits
+* [x] Use a fixed one-nearest-neighbor cosine classifier
+* [x] Compare 1, 3, and 5 labeled reviews per class
+* [x] Repeat the KNN comparison across 100 seeded nested support sets
+* [x] Report validation sampling variability
+* [x] Evaluate one predeclared KNN episode on the held-out test set
+* [x] Reconstruct the previous task's model-visible IMDB split
+* [x] Build balanced nested GPT-2 prompts with 1, 2, and 3 examples per class
+* [x] Include a zero-shot GPT-2 baseline
+* [x] Score negative and positive label tokens directly
+* [x] Evaluate prompt variants on balanced held-out reviews
+* [x] Record metrics, timing, limitations, and the accelerator decision
+
 ## Phase 3: AI Agents
